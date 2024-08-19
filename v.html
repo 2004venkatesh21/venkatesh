@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="cascade.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Home Section -->
+        <section id="home" class="home">
+            <div class="hero-content">
+                <h1>Venkatesh</h1>
+                <p>Welcome to my personal portfolio. I am a passionate web developer who loves creating beautiful and functional websites.</p>
+                <a href="#projects" class="btn-primary">View My Work</a>
+            </div>
+            <div class="hero-image">
+                <img src="https://www.shutterstock.com/image-photo/close-head-shot-confident-serious-600nw-1481322794.jpg" alt="Profile Image">
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="projects">
+            <h2>Projects</h2>
+            <div class="card-container">
+                <div class="card">
+                    <div class="card-content">
+                        <h3>TIC TAC TOE</h3>
+                        <p>Using Python.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <h3>Bus Ticket Registration</h3>
+                        <p>Using HTML.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <h3>On-Screen Calculator</h3>
+                        <p>Using HTML and CSS.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact">
+            <h2>Contact</h2>
+            <p>You can reach me at: <a href="mailto:venkatesh123@gmail.com">venkatesh123@gmail.com</a></p>
+            <p>Follow me on <a href="https://twitter.com/yourprofile" target="_blank">Twitter</a> and <a href="https://linkedin.com/in/yourprofile" target="_blank">LinkedIn</a>.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Venkatesh. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // Smooth scrolling
+        document.querySelectorAll('.nav-link').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
